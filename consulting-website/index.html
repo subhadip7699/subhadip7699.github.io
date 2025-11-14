@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elevate Consulting</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Background Animation */
+    @keyframes gradientMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    .bg-animated {
+      background: linear-gradient(270deg, #0f172a, #1e3a8a, #0ea5e9);
+      background-size: 600% 600%;
+      animation: gradientMove 15s ease infinite;
+    }
+  </style>
+</head>
+<body class="bg-animated text-white font-sans">
+  <!-- Navbar -->
+  <header class="w-full fixed top-0 left-0 bg-black/30 backdrop-blur-lg z-50">
+    <nav class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">Elevate Consulting</h1>
+      <ul class="hidden md:flex gap-8 text-lg">
+        <li><a href="#services" class="hover:text-cyan-300">Services</a></li>
+        <li><a href="#about" class="hover:text-cyan-300">About</a></li>
+        <li><a href="#contact" class="hover:text-cyan-300">Contact</a></li>
+      </ul>
+      <button class="md:hidden text-2xl">☰</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center px-4">
+    <h2 class="text-4xl md:text-6xl font-extrabold">Empowering Businesses for Success</h2>
+    <p class="mt-4 max-w-2xl text-lg md:text-xl">Strategic insights, expert guidance, and transformative solutions to elevate your organization to the next level.</p>
+    <a href="#contact" class="mt-8 bg-cyan-500 hover:bg-cyan-400 text-black font-semibold px-6 py-3 rounded-full transition">Get Started</a>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="max-w-7xl mx-auto py-20 px-6">
+    <h3 class="text-3xl md:text-4xl font-bold text-center mb-10">Our Services</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div class="bg-white/10 p-6 rounded-2xl shadow-lg backdrop-blur-md">
+        <h4 class="text-2xl font-bold mb-3">Business Strategy</h4>
+        <p>Guiding leadership teams to craft visionary yet actionable roadmaps for scalable growth.</p>
+      </div>
+      <div class="bg-white/10 p-6 rounded-2xl shadow-lg backdrop-blur-md">
+        <h4 class="text-2xl font-bold mb-3">Market Analysis</h4>
+        <p>Data‑driven insights to help you understand trends, competitors, and customer behavior.</p>
+      </div>
+      <div class="bg-white/10 p-6 rounded-2xl shadow-lg backdrop-blur-md">
+        <h4 class="text-2xl font-bold mb-3">Operations Optimization</h4>
+        <p>Improving efficiency through process audits, technology integration, and workflow redesign.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-black/30 backdrop-blur-lg py-20 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="text-3xl md:text-4xl font-bold mb-6">About Us</h3>
+      <p class="text-lg md:text-xl">Elevate Consulting was founded to support organizations seeking innovation, operational excellence, and breakthrough growth. Our consultants bring expertise across industries to deliver measurable results.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-4xl mx-auto py-20 px-6">
+    <h3 class="text-3xl md:text-4xl font-bold text-center mb-10">Contact Us</h3>
+    <form class="grid grid-cols-1 gap-6">
+      <input type="text" placeholder="Your Name" class="p-4 rounded-xl text-black" required />
+      <input type="email" placeholder="Email" class="p-4 rounded-xl text-black" required />
+      <textarea placeholder="Message" rows="5" class="p-4 rounded-xl text-black" required></textarea>
+      <button class="bg-cyan-500 hover:bg-cyan-400 text-black font-semibold p-4 rounded-xl transition">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-black/40 backdrop-blur-lg">
+    <p>© 2025 Elevate Consulting | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
